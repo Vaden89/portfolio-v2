@@ -10,7 +10,7 @@ export const Footer = () => {
         </span>
         <div className="flex gap-2">
           <button className="bg-foreground text-background px-2 py-1 sm:px-4 sm:py-2 rounded text-sm sm:text-base font-medium">
-            Let's Talk
+            Let&apos;s Talk
           </button>
           <button className="flex px-2 py-1.5 sm:px-4 sm:py-2 bg-[#343a40] rounded text-sm sm:text-base font-medium">
             <span>My Work</span>

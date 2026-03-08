@@ -4,7 +4,7 @@ import { File, Mail } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section className="text-base font-montserrat flex flex-col gap-4">
-      <span>Hey there! I'm</span>
+      <span>Hey there! I&apos;m</span>
       <div>
         <h1 className="font-bitcount text-8xl font-semibold leading-[60%]">
           Isaac
@@ -21,7 +21,7 @@ export const HeroSection = () => {
 
       <p>
         Currently on a side quest building on the edge of AI and the modern web,
-        turning small ideas into production grade software, Whether is's
+        turning small ideas into production grade software, Whether it&apos;s
         crafting beautiful user experiences, designing a scalable backend to
         handle massive amounts of traffic, or shipping full-stack products end
         to end, I bring along the same standards I hold myself to.
