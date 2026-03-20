@@ -1,11 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+button {
+    cursor: pointer;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
     --font-bitcount: var(--font-bitcount);
     --font-montserrat: var(--font-montserrat);
+    --color-primary-gray: var(--primary-gray);
+    --color-primary-dark-gray: var(--primary-dark-gray);
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-sidebar-ring: var(--sidebar-ring);
@@ -51,7 +57,8 @@
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(63.785% 0.22996 12.831);
+    --primary-gray: #ced4da;
+    --primary-dark-gray: #212529;
     --primary-foreground: oklch(0.985 0 0);
     --secondary: oklch(0.97 0 0);
     --secondary-foreground: oklch(0.205 0 0);

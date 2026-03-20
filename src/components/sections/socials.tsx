@@ -14,6 +14,7 @@ export const SocialsSection = () => {
               icon={item.img}
               link={item.link}
               platform={item.platform}
+              index={index}
             />
           );
         })}
@@ -26,18 +27,27 @@ const SocialPill = ({
   link,
   platform,
   icon,
+  index,
 }: {
   link: string;
   platform: string;
   icon: string;
+  index: number;
 }) => {
   return (
-    <div className="flex items-center gap-2">
-      <Image src={icon} alt={platform} width={24} height={24} />
-      <Link href={link} target="_blank" rel="noopener noreferrer">
+    <div className="flex items-center gap-2 text-sm">
+      <Image src={icon} alt={platform} width={20} height={20} />
+      <Link
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline underline-offset-1"
+      >
         {platform}
       </Link>
-      <span className="w-1 h-1 mx-2 bg-gray-400 rounded-full" />
+      {index !== socials.length - 1 && (
+        <span className="w-1 h-1 mx-2 bg-gray-400 rounded-full" />
+      )}
     </div>
   );
 };

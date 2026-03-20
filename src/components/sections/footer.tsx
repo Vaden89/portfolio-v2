@@ -2,17 +2,17 @@ import { ArrowUpRight, Copyright } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full h-[40vh] flex flex-col py-5">
+    <footer className="w-full flex flex-col py-5">
       <div className="h-full flex-1"></div>
       <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6">
         <span className="text-xl sm:text-3xl font-bold">
           Want to build something cool?
         </span>
         <div className="flex gap-2">
-          <button className="bg-foreground text-background px-2 py-1 sm:px-4 sm:py-2 rounded text-sm sm:text-base font-medium">
+          <button className="bg-foreground text-background px-2 py-1 sm:px-4 sm:py-2 rounded text-sm font-medium shrink-0">
             Let&apos;s Talk
           </button>
-          <button className="flex px-2 py-1.5 sm:px-4 sm:py-2 bg-[#343a40] rounded text-sm sm:text-base font-medium">
+          <button className="flex px-2 py-1.5 sm:px-4 sm:py-2 bg-[#343a40] rounded text-sm font-medium shrink-0">
             <span>My Work</span>
             <ArrowUpRight size={16} />
           </button>

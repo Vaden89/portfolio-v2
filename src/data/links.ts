@@ -14,4 +14,9 @@ export const socials = [
     link: "https://dev.to/vaden89",
     img: "/icons/devdotto.svg",
   },
+  {
+    platform: "LinkedIn",
+    link: "https://linkedin.com/in/isaac-shosanya",
+    img: "/icons/linkedln.svg",
+  },
 ];
