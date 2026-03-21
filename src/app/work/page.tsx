@@ -141,7 +141,7 @@ const CareerBlock = ({
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="-mt-3 flex flex-col gap-2 px-8"
+            className="-mt-3 flex flex-col gap-2 px-4 sm:px-8"
           >
             <>
               {description.map((desc, index) => (

@@ -45,7 +45,7 @@ const ProjectPill = ({
       <motion.div
         initial="initial"
         whileHover="hover"
-        className="flex flex-col"
+        className="flex flex-col shrink-0"
       >
         <Link
           target="_blank"
@@ -56,7 +56,7 @@ const ProjectPill = ({
         </Link>
         <motion.div variants={underlineVariant} className="h-0.5 bg-white" />
       </motion.div>
-      <p className="truncate text-[#ced4da] text-[13px]">{description}</p>
+      <p className="truncate text-primary-gray text-[13px]">{description}</p>
     </div>
   );
 };

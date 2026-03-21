@@ -21,7 +21,7 @@ export const SkillsSection = () => {
 
 const SkillPill = ({ skill }: { skill: string }) => {
   return (
-    <span className="border-[#212529] px-2 py-1 border sm:text-xs text-[#ced4da]">
+    <span className="border-[#212529] px-2 py-1 border text-[13px] sm:text-xs text-primary-gray">
       {skill}
     </span>
   );

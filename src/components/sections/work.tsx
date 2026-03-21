@@ -39,7 +39,7 @@ const WorkItem = ({
       </div>
       <div className="flex gap-2 items-center">
         <CornerDownRight color="#343a40" className="ml-3 mt-1" />
-        <div className="flex mt-2 gap-8 text-[#ced4da]">
+        <div className="flex mt-2 gap-8 text-primary-gray">
           <span className="text-[13px]">{startDate}</span>
           <span className="text-[13px]">{role}</span>
           {endDate === "Present" && (

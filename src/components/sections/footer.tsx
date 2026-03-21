@@ -2,7 +2,7 @@ import { ArrowUpRight, Copyright } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full flex flex-col py-5">
+    <footer className="w-full flex flex-col py-5 font-montserrat">
       <div className="h-full flex-1"></div>
       <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6">
         <span className="text-xl sm:text-3xl font-bold">

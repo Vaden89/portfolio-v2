@@ -5,8 +5,8 @@ import { socials } from "~/data/links";
 export const SocialsSection = () => {
   return (
     <section>
-      <h2 className="text-2xl font-bitcount">Connect</h2>
-      <div className="w-full flex flex-wrap gap-2 ">
+      <h2 className="text-3xl font-bitcount">Connect</h2>
+      <div className="w-full flex flex-wrap gap-2 mt-2 ">
         {socials.map((item, index) => {
           return (
             <SocialPill

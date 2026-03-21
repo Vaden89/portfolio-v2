@@ -3,7 +3,7 @@ import { File, Mail } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="text-base font-montserrat flex sm:text-[13px] flex-col gap-4 text-primary-gray">
+    <section className="text-sm font-montserrat flex sm:text-[13px] flex-col gap-4 text-primary-gray">
       <span>Hey there! I&apos;m</span>
       <div>
         <h1 className="font-bitcount text-white text-8xl leading-[60%]">
@@ -40,7 +40,7 @@ export const HeroSection = () => {
             Learn more about my experience
           </span>
         </Link>
-        <div className="flex gap-2 sm:text-xs">
+        <div className="flex gap-2 text-xs">
           <Link
             href="mailto:isaacshosanya89@gmail.com"
             className="px-2 py-1 shadow-sm border border-[#212529] rounded-lg flex items-center gap-2"
