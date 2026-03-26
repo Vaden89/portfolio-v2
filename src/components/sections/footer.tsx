@@ -1,4 +1,5 @@
 import { ArrowUpRight, Copyright } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -9,13 +10,19 @@ export const Footer = () => {
           Want to build something cool?
         </span>
         <div className="flex gap-2">
-          <button className="bg-foreground text-background px-2 py-1 sm:px-4 sm:py-2 rounded text-sm font-medium shrink-0">
+          <Link
+            href="mailto:isaacshosanya89@gmail.com"
+            className="bg-foreground text-background px-2 py-1 sm:px-4 sm:py-2 rounded text-sm font-medium shrink-0"
+          >
             Let&apos;s Talk
-          </button>
-          <button className="flex px-2 py-1.5 sm:px-4 sm:py-2 bg-[#343a40] rounded text-sm font-medium shrink-0">
+          </Link>
+          <Link
+            href="/work"
+            className="flex px-2 py-1.5 sm:px-4 sm:py-2 bg-[#343a40] rounded text-sm font-medium shrink-0"
+          >
             <span>My Work</span>
             <ArrowUpRight size={16} />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="w-full mt-7 flex text-xs sm:text-sm items-center justify-between font-montserrat text-[#adb5bd]">

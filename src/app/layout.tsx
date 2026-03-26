@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} ${bitcount.variable} antialiased min-h-screen w-full max-w-2xl mx-auto px-6 mt-10 md:mt-20`}
+        className={`${montserrat.variable} ${bitcount.variable} antialiased min-h-screen w-full max-w-3xl mx-auto px-6 mt-10 md:mt-20`}
       >
         <Providers>{children}</Providers>
       </body>

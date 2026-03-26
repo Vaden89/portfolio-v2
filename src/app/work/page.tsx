@@ -6,6 +6,7 @@ import { ReactNode, useState } from "react";
 import { AnimatePresence, motion, stagger, Variants } from "motion/react";
 import { Footer } from "~/components/sections/footer";
 import { PageHeader } from "~/components/common/page-header";
+import { TechnologiesBlock } from "~/components/common/technologies-block";
 
 export default function WorkPage() {
   const currentRoles = work.filter((role) => role.endDate === "Present");
@@ -180,21 +181,6 @@ const JDBlock = ({
       <div className="w-1.5 h-1.5 rounded-full bg-gray-700 shrink-0 mt-1.5" />
       <p className="text-sm">{jobDescription}</p>
     </motion.div>
-  );
-};
-
-const TechnologiesBlock = ({ technologies }: { technologies: string[] }) => {
-  return (
-    <div className="w-full flex flex-wrap gap-1 mt-4">
-      {technologies.map((technology, index) => (
-        <span
-          key={index}
-          className="text-xs bg-zinc-900 border border-primary-dark-gray text-primary-gray rounded-lg px-1.5 p-1"
-        >
-          {technology}
-        </span>
-      ))}
-    </div>
   );
 };
 

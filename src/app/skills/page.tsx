@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HomeButton } from "~/components/common/home-btn";
 import { PageHeader } from "~/components/common/page-header";
+import { SoftSkillBlock } from "~/components/common/soft-skill";
 import { Footer } from "~/components/sections/footer";
 import {
   coreLangs,
@@ -124,15 +125,6 @@ const ProgrammingLanguageBlock = ({
     <div className="flex items-center gap-2 border p-2">
       <Image src={icon} width={18} height={18} alt="" />
       <span className="text-[13px] font-medium">{name}</span>
-    </div>
-  );
-};
-
-const SoftSkillBlock = ({ skill }: { skill: string }) => {
-  return (
-    <div className="flex items-center gap-2">
-      <div className="w-1 h-1 rounded-full bg-primary-gray" />
-      <span className="text-[13px] font-medium text-primary-gray">{skill}</span>
     </div>
   );
 };
