@@ -1,5 +1,3 @@
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { skills } from "~/data/skills";
 import { ViewMoreLink } from "../common/view-more-link";
 

@@ -7,8 +7,8 @@ export const Footer = () => {
       <div className="h-[30vh] flex flex-col gap-3 items-center justify-center text-center">
         <Quote />
         <span className="font-semibold text-xl">
-          "I was not born with a whole lot of natural talent... but I work hard
-          and I never give up"
+          &quot;I was not born with a whole lot of natural talent... but I work
+          hard and I never give up&quot;
         </span>
         <div className="flex items-center gap-2">
           <div className="w-8 h-0.5 bg-foreground" />

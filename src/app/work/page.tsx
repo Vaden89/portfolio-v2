@@ -1,9 +1,9 @@
 "use client";
-import { ChevronsDownUp, ChevronsUpDown, Code, CodeXml } from "lucide-react";
+import { ChevronsDownUp, ChevronsUpDown, CodeXml } from "lucide-react";
 import { HomeButton } from "~/components/common/home-btn";
 import { work } from "~/data/work";
 import { ReactNode, useState } from "react";
-import { AnimatePresence, motion, stagger, Variants } from "motion/react";
+import { AnimatePresence, motion, Variants } from "motion/react";
 import { Footer } from "~/components/sections/footer";
 import { PageHeader } from "~/components/common/page-header";
 import { TechnologiesBlock } from "~/components/common/technologies-block";

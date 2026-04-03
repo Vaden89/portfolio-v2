@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { motion, Transition, Variant } from "motion/react";
+import { motion, Transition } from "motion/react";
 
 const routes = [
   { path: "/", name: "Home" },
@@ -18,19 +18,15 @@ export const Navbar = () => {
       <nav className="w-full h-12 flex items-center justify-between border-primary-dark-gray border px-2 bg-background">
         <Image src="/images/logo.png" alt="Logo" width={28} height={28} />
         <div>
-          <DesktopMenu routes={routes} />
-          <MobileMenu routes={routes} />
+          <DesktopMenu />
+          <MobileMenu />
         </div>
       </nav>
     </div>
   );
 };
 
-const MobileMenu = ({
-  routes,
-}: {
-  routes: { path: string; name: string }[];
-}) => {
+const MobileMenu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const topLineVariants = {
@@ -99,7 +95,7 @@ const MainMobileMenu = () => {
       transition={{ delayChildren: 0.3, staggerChildren: 0.1 }}
       className="w-36 py-3 rounded-xl absolute z-50 top-9 -right-2 border border-primary-dark-gray bg-[#111114] flex flex-col gap-2"
     >
-      {routes.map((route, index) => (
+      {routes.map((route) => (
         <motion.li
           key={route.path}
           variants={linkVariants}
@@ -112,11 +108,7 @@ const MainMobileMenu = () => {
   );
 };
 
-const DesktopMenu = ({
-  routes,
-}: {
-  routes: { path: string; name: string }[];
-}) => {
+const DesktopMenu = () => {
   return (
     <ul className="items-center gap-4 hidden sm:flex">
       {routes.map((route) => (
