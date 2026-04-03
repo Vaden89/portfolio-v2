@@ -113,13 +113,16 @@ const CareerBlock = ({
           </div>
         )}
       </div>
-      <div className="w-full flex items-center justify-between">
+      <button
+        onClick={() => setIsOpen((prev) => !prev)}
+        className="w-full flex items-center justify-between"
+      >
         <div className="flex items-start gap-2">
           <div className="p-1 rounded-md bg-primary-dark-gray text-primary-gray border-t border-l">
             <CodeXml size={14} />
           </div>
           <div className="flex flex-col">
-            <span className="text-sm">{role}</span>
+            <span className="w-fit text-sm">{role}</span>
             <div className="flex text-xs gap-2 items-center text-primary-gray">
               <span>{location}</span> |{" "}
               <span>
@@ -128,13 +131,10 @@ const CareerBlock = ({
             </div>
           </div>
         </div>
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="text-primary-gray"
-        >
+        <span className="text-primary-gray">
           {isOpen ? <ChevronsDownUp size={16} /> : <ChevronsUpDown size={16} />}
-        </button>
-      </div>
+        </span>
+      </button>
       <AnimatePresence>
         {isOpen && (
           <motion.div

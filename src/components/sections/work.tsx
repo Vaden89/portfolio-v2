@@ -3,6 +3,8 @@ import { work } from "~/data/work";
 import { ViewMoreLink } from "../common/view-more-link";
 
 export const WorkSection = () => {
+  const highlightedWork = [...work].splice(0, 4);
+
   return (
     <section>
       <div className="w-full flex justify-between items-center">
@@ -10,7 +12,7 @@ export const WorkSection = () => {
         <ViewMoreLink link="/work" />
       </div>
       <div className="flex flex-col gap-4 mt-2">
-        {work.splice(0, 4).map((item, index) => {
+        {highlightedWork.map((item, index) => {
           return <WorkItem key={index} {...item} />;
         })}
       </div>

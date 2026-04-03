@@ -9,6 +9,19 @@ button {
     cursor: pointer;
 }
 
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #636369;
+    border-radius: 0px;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

@@ -1,15 +1,20 @@
 import Link from "next/link";
 import { File, Mail } from "lucide-react";
+import { HeaderPattern } from "../common/header-pattern";
+import { LettersPullUp } from "../common/split-text";
 
 export const HeroSection = () => {
+  const words = ["Software Engineer", "Always Learning"];
+
   return (
     <section className="text-sm font-montserrat flex sm:text-[13px] flex-col gap-4 text-primary-gray">
+      <HeaderPattern />
       <span>Hey there! I&apos;m</span>
       <div>
         <h1 className="font-bitcount text-white text-8xl leading-[60%]">
           Isaac
         </h1>
-        <span className=" text-white sm:text-sm">Software Engineer</span>
+        <LettersPullUp words={words} />
       </div>
 
       <p>

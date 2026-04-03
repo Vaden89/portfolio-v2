@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bitcount_Prop_Double, Montserrat } from "next/font/google";
 import "./globals.css";
 import Providers from "~/contexts/providers";
+import { Navbar } from "~/components/common/nav-bar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -46,6 +47,7 @@ export const metadata: Metadata = {
     },
   ],
   creator: "Isaac Shosanya",
+  publisher: "Isaac Shosanya",
   title: {
     default: siteName,
     template: `%s | ${siteName}`,
@@ -68,8 +70,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} ${bitcount.variable} antialiased min-h-screen w-full max-w-3xl mx-auto px-6 mt-10 md:mt-20`}
+        className={`${montserrat.variable} ${bitcount.variable} antialiased min-h-screen w-full max-w-3xl mx-auto px-6 scrollbar`}
       >
+        <Navbar />
         <Providers>{children}</Providers>
       </body>
     </html>
