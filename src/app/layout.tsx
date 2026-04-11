@@ -60,6 +60,29 @@ export const metadata: Metadata = {
     icon: [{ url: "/favicon.ico", sizes: "any" }],
   },
   category: "technology",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    title: siteName,
+    description: siteDescription,
+    images: [
+      {
+        url: `${baseUrl}/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Isaac Shosanya",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@vadenisisaac",
+    creator: "@vadenisisaac",
+    title: siteName,
+    description: siteDescription,
+    images: [`${baseUrl}/twitter-image.png`],
+  },
 };
 
 export default function RootLayout({
