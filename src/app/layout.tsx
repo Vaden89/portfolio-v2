@@ -66,14 +66,6 @@ export const metadata: Metadata = {
     url: baseUrl,
     title: siteName,
     description: siteDescription,
-    images: [
-      {
-        url: `${baseUrl}/opengraph-image.png`,
-        width: 1200,
-        height: 630,
-        alt: "Isaac Shosanya",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -81,7 +73,6 @@ export const metadata: Metadata = {
     creator: "@vadenisisaac",
     title: siteName,
     description: siteDescription,
-    images: [`${baseUrl}/twitter-image.png`],
   },
 };
 
