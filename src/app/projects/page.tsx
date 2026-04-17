@@ -12,18 +12,19 @@ export default function ProjectsPage() {
         title="Projects"
         subtitle="A curated collection of projects, tools and open source contributions I've worked on."
       />
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="columns-1 sm:columns-2 gap-4">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            name={project.name}
-            image={project.image}
-            github_url={project.github}
-            category={project.category}
-            live_url={project.live_link}
-            description={project.description}
-            technologies={project.technologies}
-          />
+          <div key={index} className="break-inside-avoid mb-4">
+            <ProjectCard
+              name={project.name}
+              image={project.image}
+              github_url={project.github}
+              category={project.category}
+              live_url={project.live_link}
+              description={project.description}
+              technologies={project.technologies}
+            />
+          </div>
         ))}
       </div>
       <Footer />

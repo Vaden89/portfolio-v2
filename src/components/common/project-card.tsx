@@ -37,10 +37,10 @@ export const ProjectCard = ({
   return (
     <div
       ref={containerRef}
-      className="w-full h-auto min-h-[470px] border border-primary-dark-gray font-montserrat "
+      className="w-full flex flex-col min-h-[470px] border border-primary-dark-gray font-montserrat"
     >
       <motion.div
-        className="h-1/2 max-h-[224px] w-full shrink-0 overflow-hidden"
+        className="h-[224px] w-full shrink-0 overflow-hidden"
         initial="rest"
         animate={animateState}
         whileHover={isMobile ? undefined : "hover"}
@@ -70,7 +70,7 @@ export const ProjectCard = ({
           </motion.div>
         </motion.div>
       </motion.div>
-      <div className="h-1/2 flex flex-col justify-between gap-2 p-3">
+      <div className="flex-1 flex flex-col justify-between gap-2 p-3">
         <div className="flex flex-col gap-2">
           <div className="flex flex-col">
             <span className="text-lg font-semibold">{name}</span>
