@@ -1,9 +1,29 @@
 export const work = [
   {
-    employer: "Digicare",
+    employer: "Rise Academy",
+    role: "Frontend Intern",
+    startDate: "2026",
+    endDate: "Present",
+    description: [
+      "Developed and maintained frontend applications using React and TypeScript.",
+    ],
+    technologies: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
+  },
+  {
+    employer: "Akawopay",
     role: "Frontend Developer",
     startDate: "2026",
     endDate: "Present",
+    description: [
+      "Developed and maintained frontend applications using React and TypeScript.",
+    ],
+    technologies: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+  },
+  {
+    employer: "Digicare",
+    role: "Frontend Developer",
+    startDate: "2026",
+    endDate: "2026",
     description: [
       `Developing a high-performance internal UI library with Tailwind CSS and ShadCN, ensuring design consistency and accessibility (a11y) across all administrative modules.`,
       `Engineering the core frontend infrastructure for the Digicare Admin Dashboard, leveraging Next.js and TypeScript to deliver a secure, performant management platform for medical data.`,
@@ -17,16 +37,6 @@ export const work = [
       "AntDesign",
       "Tanstack Query",
     ],
-  },
-  {
-    employer: "Rise Academy",
-    role: "Frontend Intern",
-    startDate: "2026",
-    endDate: "Present",
-    description: [
-      "Developed and maintained frontend applications using React and TypeScript.",
-    ],
-    technologies: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
   },
   {
     employer: "Anli Solutions",
@@ -65,12 +75,16 @@ export const work = [
     technologies: ["React", "JavaScript", "CSS", "MaterialUi", "React Router"],
   },
   {
-    employer: "Hidden",
+    employer: "NDA (Protected) - Hidden",
     role: "Frontend Developer",
     startDate: "2023",
     endDate: "2025",
     description: [
-      "Developed and maintained frontend applications using React and TypeScript.",
+      "Architected 3+ dashboard applications utilizing Next.js and WebSockets, implementing live synchronization features that ensured real-time data consistency across distributed client sessions.",
+      "Engineered a Role-Based Access Control (RBAC) system for 17+ unique user roles, coordinating TypeScript interfaces with backend authorization logic to enforce strict data security at the UI and API levels.",
+      "Developed a library of 70+ highly reusable React/Next.js components, slashing development time by 60% and maintaining design system integrity across three high-traffic projects.",
+      "Spearheaded the migration of legacy client-side fetching to Next.js Server Actions, reducing API response latency by 23% and significantly improving SEO.",
+      "Established comprehensive application monitoring by integrating Sentry, automating real-time error reporting and bug detection to drastically reduce Mean Time to Resolution",
     ],
     technologies: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
   },
