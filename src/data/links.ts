@@ -5,7 +5,7 @@ export const socials = [
     img: "/icons/github.svg",
   },
   {
-    platform: "X",
+    platform: "X (Twitter)",
     link: "https://x.com/vadenisisaac",
     img: "/icons/x.svg",
   },

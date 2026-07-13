@@ -2,7 +2,7 @@ export const work = [
   {
     employer: "Rise Academy",
     role: "Frontend Intern",
-    startDate: "2026",
+    startDate: "Jan 2026",
     endDate: "Present",
     description: [
       "Developed and maintained frontend applications using React and TypeScript.",
@@ -11,19 +11,29 @@ export const work = [
   },
   {
     employer: "Akawopay",
-    role: "Frontend Developer",
-    startDate: "2026",
+    role: "Full-stack Developer",
+    startDate: "May 2026",
     endDate: "Present",
     description: [
-      "Developed and maintained frontend applications using React and TypeScript.",
+      `Built and maintained full-stack features for a Buy Now, Pay Later platform, supporting customer onboarding, merchant workflows, and repayment experiences.`,
+      `Developed responsive frontend interfaces with React, Next.js, and TypeScript, focusing on clean user flows for checkout, account management, and transaction tracking.`,
+      `Implemented backend APIs and database workflows using Nest.js and PostgreSQL to support payment records, user data, and platform operations.`,
+      `Worked on integrations with financial service providers and internal tools to help streamline payment processing, verification, and reporting workflows.`,
     ],
-    technologies: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "PostgreSQL",
+      "Nest.js",
+      "Mono",
+    ],
   },
   {
     employer: "Digicare",
     role: "Frontend Developer",
-    startDate: "2026",
-    endDate: "2026",
+    startDate: "Feb 2026",
+    endDate: "Apr 2026",
     description: [
       `Developing a high-performance internal UI library with Tailwind CSS and ShadCN, ensuring design consistency and accessibility (a11y) across all administrative modules.`,
       `Engineering the core frontend infrastructure for the Digicare Admin Dashboard, leveraging Next.js and TypeScript to deliver a secure, performant management platform for medical data.`,
@@ -41,8 +51,8 @@ export const work = [
   {
     employer: "Anli Solutions",
     role: "Full-stack Developer",
-    startDate: "2025",
-    endDate: "2025",
+    startDate: "Jul 2025",
+    endDate: "Jan 2026",
     description: [
       `Engineered high-performance application pages using Next.js, Tailwind CSS, and ShadCN, resulting in a
       seamless UI/UX that boosted user engagement and conversion rates.`,
@@ -64,8 +74,8 @@ export const work = [
   {
     employer: "Nigerian Communication Commission",
     role: "Frontend Developer",
-    startDate: "2025",
-    endDate: "2025",
+    startDate: "Jun 2025",
+    endDate: "Aug 2025",
     description: [
       `Re-engineered the short-code application workflow, resolving critical UI/UX bottlenecks and implementing complex state management to ensure 100% data accuracy in multi-step regulatory forms.`,
       `Slashed page load times by 53% (7.2s to 3.4s) through aggressive bundle size reduction, code-splitting, and the implementation of strategic caching layers and optimized data-fetching patterns.`,
@@ -77,8 +87,8 @@ export const work = [
   {
     employer: "NDA (Protected) - Hidden",
     role: "Frontend Developer",
-    startDate: "2023",
-    endDate: "2025",
+    startDate: "Aug 2023",
+    endDate: "Nov 2025",
     description: [
       "Architected 3+ dashboard applications utilizing Next.js and WebSockets, implementing live synchronization features that ensured real-time data consistency across distributed client sessions.",
       "Engineered a Role-Based Access Control (RBAC) system for 17+ unique user roles, coordinating TypeScript interfaces with backend authorization logic to enforce strict data security at the UI and API levels.",
@@ -91,8 +101,8 @@ export const work = [
   {
     employer: "HNG Tech",
     role: "Frontend Finalist",
-    startDate: "2023",
-    endDate: "2023",
+    startDate: "Jun 2024",
+    endDate: "Aug 2024",
     description: [
       "Developed and maintained frontend applications using React and TypeScript.",
     ],
