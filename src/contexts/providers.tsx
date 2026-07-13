@@ -52,7 +52,9 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         enableSystem
         disableTransitionOnChange
       >
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          <div className="mt-20">{children}</div>
+        </LenisProvider>
       </ThemeProvider>
 
       <div
