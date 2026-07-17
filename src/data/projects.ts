@@ -1,14 +1,32 @@
 export const projects = [
   {
+    name: "Reswork",
+    description: `Reswork is a web application for creating, editing, and exporting professional
+       resumes, it lets users choose from polished templates, fill out structured sections, preview changes live as they work, and export a finished, print-ready document.`,
+    category: "Personal Project",
+    technologies: ["React.js", "Typescript", "Tanstack Router", "TailwindCSS"],
+    link: "https://reswork.vercel.app/",
+    image: "/images/reswork.png",
+    github: "https://github.com/vaden89/reswork",
+    live_link: "https://reswork.vercel.app/",
+  },
+  {
     name: "Luminary",
     description:
       "A platform for women, allowing for the exceptional acheivements and contributions of women to be highlighted and celebrated.",
     category: "Team Project",
-    technologies: ["HTML", "CSS", "Javascript", "Express", "Supabase"],
-    link: "https://luminary-for-women.netlify.app/",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Express",
+      "PostgreSQL",
+      "DrizzleORM",
+      "Turborepo",
+    ],
+    link: "https://luminary-for-women.vercel.app/",
     image: "/images/luminary.png",
     github: "https://github.com/Tabi-Project/Luminary",
-    live_link: "https://luminary-for-women.netlify.app/",
+    live_link: "https://luminary-for-women.vercel.app/",
   },
   {
     name: "Zedu Chat",
