@@ -7,16 +7,16 @@ export const Footer = () => {
       <div className="h-[30vh] flex flex-col gap-3 items-center justify-center text-center">
         <Quote />
         <span className="font-semibold text-xl">
-          &quot;Go Beyond, Plus Ultra&quot;
+          &quot;My Magic Is Never Giving Up&quot;
         </span>
         <div className="flex items-center gap-2">
           <div className="w-8 h-0.5 bg-foreground" />
-          <span>ALL MIGHT</span>
+          <span>ASTA</span>
           <div className="w-8 h-0.5 bg-foreground" />
         </div>
       </div>
       <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-3 lg:gap-6">
-        <span className="text-xl sm:text-2xl text-center  lg:text-3xl font-bold">
+        <span className="text-xl sm:text-2xl text-center sm:text-left  lg:text-3xl font-bold">
           Want to build something cool?
         </span>
         <div className="flex gap-2">
