@@ -9,16 +9,22 @@ const routes = [
   { path: "/work", name: "Work" },
   { path: "/projects", name: "Projects" },
   { path: "/skills", name: "Skills" },
-  { path: "/", name: "Contact" },
+  { path: "/blog", name: "Blog" },
 ];
 
 export const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <motion.nav className="fixed top-4 right-6 left-6 z-50 box-border border border-primary-dark-gray px-2 bg-background flex flex-col min-h-12 overflow-hidden max-w-[45rem] mx-auto">
+    <motion.nav className="fixed top-4 right-6 left-6 z-50 box-border border border-primary-dark-gray px-4 bg-background flex flex-col min-h-12 overflow-hidden max-w-[45rem] mx-auto rounded-xl">
       <div className="w-full flex items-center justify-between h-12">
-        <Image src="/images/logo.png" alt="Logo" width={28} height={28} />
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          width={28}
+          height={28}
+          className="w-auto h-auto"
+        />
 
         <DesktopMenu />
         <MobileMenu isOpen={isMobileNavOpen} setIsOpen={setIsMobileNavOpen} />

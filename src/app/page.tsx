@@ -1,3 +1,4 @@
+import { BlogSection } from "~/components/sections/blog";
 import { Footer } from "~/components/sections/footer";
 import { HeroSection } from "~/components/sections/hero";
 import { ProjectsSection } from "~/components/sections/projects";
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsSection />
       <WorkSection />
       <ProjectsSection />
+      <BlogSection />
       <SocialsSection />
       <Footer />
     </main>
