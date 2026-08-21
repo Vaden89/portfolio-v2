@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/@prudentbird/voxx-core/voxx.schema.json",
+  "site": {
+    "title": "vadenbuilds",
+    "description": "Isaac and his thoughts, a blog detailing all of my endless curiosities.",
+    "url": "https://vaden.is-a.dev",
+    "locale": "en-US"
+  },
+  "features": {
+    "toc": false
+  },
+  "content": {
+    "type": "blog",
+    "dir": "src/app/(voxx)/blog/_content",
+    "basePath": "/blog",
+    "drafts": false
+  },
+  "theme": {
+    "preset": "default",
+    "css": null,
+    "codeTheme": "github-light github-dark"
+  },
+  "seo": {
+    "openGraph": true,
+    "twitter": null,
+    "jsonLd": true,
+    "defaultImage": null
+  }
+}
