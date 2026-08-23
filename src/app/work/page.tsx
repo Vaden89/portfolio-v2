@@ -7,6 +7,7 @@ import { AnimatePresence, motion, Variants } from "motion/react";
 import { Footer } from "~/components/sections/footer";
 import { PageHeader } from "~/components/common/page-header";
 import { TechnologiesBlock } from "~/components/common/technologies-block";
+import Image from "next/image";
 
 export default function WorkPage() {
   const currentRoles = work.filter((role) => role.endDate === "Present");
@@ -27,6 +28,7 @@ export default function WorkPage() {
                 key={index}
                 role={job.role}
                 location="Remote"
+                image={job.image}
                 endDate={job.endDate}
                 company={job.employer}
                 startDate={job.startDate}
@@ -45,6 +47,7 @@ export default function WorkPage() {
                 key={index}
                 role={job.role}
                 location="Remote"
+                image={job.image}
                 endDate={job.endDate}
                 company={job.employer}
                 startDate={job.startDate}
@@ -61,11 +64,12 @@ export default function WorkPage() {
 }
 
 interface CareerBlockProps {
-  company: string;
   role: string;
-  startDate: string;
+  image?: string;
+  company: string;
   endDate: string;
   location: string;
+  startDate: string;
   description: string[];
   technologies: string[];
 }
@@ -78,6 +82,7 @@ const CareerBlock = ({
   location,
   description,
   technologies,
+  image,
 }: CareerBlockProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -101,8 +106,18 @@ const CareerBlock = ({
     >
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center bg-primary-dark-gray text-primary-gray text-sm font-semibold">
-            {company.charAt(0).toUpperCase()}
+          <div className="w-8 h-8 flex items-center justify-center bg-[#101113] border border-[#343a40/20] rounded-sm text-primary-gray text-sm font-semibold">
+            {image ? (
+              <Image
+                src={image}
+                alt={company}
+                className="w-5 h-5 object-contain "
+                width={24}
+                height={24}
+              />
+            ) : (
+              company.charAt(0).toUpperCase()
+            )}
           </div>
           <span className="font-semibold">{company}</span>
         </div>

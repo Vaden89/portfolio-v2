@@ -16,8 +16,11 @@ export const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <motion.nav className="fixed top-4 right-6 left-6 z-50 box-border border border-primary-dark-gray px-4 bg-background flex flex-col min-h-12 overflow-hidden max-w-[45rem] mx-auto rounded-xl">
-      <div className="w-full flex items-center justify-between h-12">
+    <motion.nav
+      animate={{ height: "auto" }}
+      className="fixed top-4 right-6 left-6 z-50 box-border border border-primary-dark-gray px-4 bg-background flex flex-col overflow-hidden max-w-[45rem] mx-auto rounded-xl"
+    >
+      <div className="w-full flex items-center justify-between py-3">
         <Image
           src="/images/logo.png"
           alt="Logo"
@@ -30,7 +33,7 @@ export const Navbar = () => {
         <MobileMenu isOpen={isMobileNavOpen} setIsOpen={setIsMobileNavOpen} />
       </div>
 
-      <AnimatePresence>
+      <AnimatePresence mode="sync">
         {isMobileNavOpen && (
           <motion.div
             initial={{
@@ -45,14 +48,14 @@ export const Navbar = () => {
             exit={{
               height: 0,
               opacity: 0,
-              transition: { type: "tween", ease: "easeInOut", duration: 0.3 },
+              transition: { type: "spring", ease: "easeInOut", duration: 0.5 },
             }}
-            className="flex flex-col gap-2 mb-2 pt-2 overflow-hidden text-lg"
+            className="flex flex-col text-[15px]"
           >
             {routes.map((route) => (
               <span
                 key={route.name}
-                className="text-[13px] font-montserrat font-medium text-primary-gray hover:text-[#0d6efd]"
+                className="font-montserrat font-medium text-primary-gray uppercase mb-3"
               >
                 <Link
                   href={route.path}
@@ -78,17 +81,17 @@ const MobileMenu = ({
 }) => {
   const topLineVariants = {
     closed: { rotate: 0 },
-    open: { rotate: 41 },
+    open: { rotate: 45 },
   };
 
   const middleLineVariants = {
-    closed: { opacity: 1 },
-    open: { opacity: 0 },
+    closed: { opacity: 1, x: 0 },
+    open: { opacity: 0, x: -10 },
   };
 
   const bottomLineVariants = {
     closed: { rotate: 0 },
-    open: { rotate: -41 },
+    open: { rotate: -45, top: "10px", width: "18px" },
   };
 
   const transition: Transition = { duration: 0.3, ease: "easeInOut" };
@@ -106,10 +109,10 @@ const MobileMenu = ({
           className="w-4 h-0.5 bg-foreground absolute -top-0.5 origin-bottom-left"
         />
         <motion.div
+          transition={transition}
           variants={middleLineVariants}
           animate={isOpen ? "open" : "closed"}
-          transition={transition}
-          className="w-4 h-0.5 bg-foreground absolute top-1 origin-bottom-left"
+          className="w-4 h-0.5 bg-foreground absolute top-[3px] origin-bottom-left"
         />
         <motion.div
           variants={bottomLineVariants}
