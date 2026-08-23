@@ -1,6 +1,7 @@
 import { CornerDownRight } from "lucide-react";
 import { work } from "~/data/work";
 import { ViewMoreLink } from "../common/view-more-link";
+import Image from "next/image";
 
 export const WorkSection = () => {
   const highlightedWork = [...work].splice(0, 4);
@@ -21,11 +22,13 @@ export const WorkSection = () => {
 };
 
 const WorkItem = ({
+  image,
   employer,
   startDate,
   role,
   endDate,
 }: {
+  image?: string;
   employer: string;
   startDate: string;
   endDate: string;
@@ -34,8 +37,18 @@ const WorkItem = ({
   return (
     <div className="w-full flex flex-col text-sm">
       <div className="flex items-center gap-2">
-        <div className="w-6 h-6 rounded-md bg-[#343a40] font-semibold flex items-center text-xs justify-center">
-          {employer.charAt(0).toUpperCase()}
+        <div className="w-8 h-8 rounded-md bg-[#101113] border border-[#343a40/20] font-semibold flex items-center text-xs justify-center">
+          {image ? (
+            <Image
+              src={image}
+              alt={employer}
+              width={16}
+              height={16}
+              className="w-4 h-4"
+            />
+          ) : (
+            <span>{employer.charAt(0).toUpperCase()}</span>
+          )}
         </div>
         <span className="font-medium text-sm">{employer}</span>
       </div>

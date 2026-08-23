@@ -1,5 +1,6 @@
 export const work = [
   {
+    image: "/icons/work/risevest.png",
     employer: "Rise Academy",
     role: "Frontend Intern",
     startDate: "Jan 2026",
@@ -10,6 +11,7 @@ export const work = [
     technologies: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
   },
   {
+    image: "/icons/work/akawopay.png",
     employer: "Akawopay",
     role: "Full-stack Developer",
     startDate: "May 2026",
@@ -49,6 +51,7 @@ export const work = [
     ],
   },
   {
+    image: "/icons/work/anli.png",
     employer: "Anli Solutions",
     role: "Full-stack Developer",
     startDate: "Jul 2025",
@@ -99,6 +102,7 @@ export const work = [
     technologies: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
   },
   {
+    image: "/icons/work/hng.png",
     employer: "HNG Tech",
     role: "Frontend Finalist",
     startDate: "Jun 2024",
