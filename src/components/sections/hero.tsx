@@ -17,7 +17,7 @@ export const HeroSection = () => {
         <LettersPullUp words={words} />
       </div>
 
-      <p>
+      <p className="leading-[150%]">
         I build software that solves real problems and holds up in production.
         My focus is on creating{" "}
         <span className="text-white font-medium">Reliable Systems</span>,

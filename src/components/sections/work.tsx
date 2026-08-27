@@ -12,7 +12,7 @@ export const WorkSection = () => {
         <h2 className="font-bitcount text-3xl">Work</h2>
         <ViewMoreLink link="/work" />
       </div>
-      <div className="flex flex-col gap-4 mt-2">
+      <div className="flex flex-col gap-4 mt-4">
         {highlightedWork.map((item, index) => {
           return <WorkItem key={index} {...item} />;
         })}
@@ -51,18 +51,18 @@ const WorkItem = ({
           )}
         </div>
         <span className="font-medium text-sm">{employer}</span>
+        {endDate === "Present" && (
+          <div className="flex items-center gap-2 text-xs">
+            <span className="w-2 h-2 bg-emerald-500 rounded-full" />
+            <span>Now</span>
+          </div>
+        )}
       </div>
       <div className="flex gap-2 items-center">
         <CornerDownRight color="#343a40" className="ml-3 mt-1" />
-        <div className="flex mt-2 gap-8 text-primary-gray">
+        <div className="flex mt-2 gap-4 sm:gap-8 text-primary-gray">
           <span className="text-[13px]">{startDate}</span>
           <span className="text-[13px]">{role}</span>
-          {endDate === "Present" && (
-            <div className="flex items-center gap-2 text-xs">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full" />
-              <span>Now</span>
-            </div>
-          )}
         </div>
       </div>
     </div>

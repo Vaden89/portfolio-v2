@@ -39,7 +39,7 @@ const projectVariant: Variants = {
 export const ProjectsSection = () => {
   return (
     <section>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-4">
         <h2 className="font-bitcount text-3xl">Projects</h2>
         <ViewMoreLink link="/projects" />
       </div>

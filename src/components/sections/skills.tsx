@@ -8,7 +8,7 @@ export const SkillsSection = () => {
         <h2 className="text-3xl font-bitcount">SKILLS</h2>
         <ViewMoreLink link="/skills" />
       </div>
-      <div className="w-full flex flex-wrap gap-2 mt-2">
+      <div className="w-full flex flex-wrap gap-2 mt-4">
         {skills.map((skill, index) => {
           return <SkillPill skill={skill} key={index} />;
         })}
