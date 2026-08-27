@@ -8,7 +8,7 @@ import { WorkSection } from "~/components/sections/work";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8">
+    <main className="flex flex-col gap-12">
       <HeroSection />
       <SkillsSection />
       <WorkSection />
