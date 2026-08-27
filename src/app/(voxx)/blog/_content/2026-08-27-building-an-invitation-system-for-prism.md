@@ -3,7 +3,7 @@ title: Building An Invitation System For Prism
 description: Workspace invitation flows look simple until you hit concurrency locks, session mismatches, and token security. Here is how I engineered the multi-tenant invite system for Prism from the ground up.
 date: 2026-08-27
 slug: building-an-invitation-system-for-prism
-tags: ["system-design", "backend", "webdev"]
+tags: []
 ---
 
 Prism is an open-source alternative to ticket management tools like Linear and Jira, but with a twist: every ticket is given the context needed to understand how a change may affect the codebase. By combining AI agents with vector embeddings, Prism helps teams move beyond simple task tracking and toward more informed, code-aware planning.

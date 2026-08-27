@@ -13,17 +13,17 @@ export function PostCard({
   const basePath = config.content.basePath || "/";
 
   return (
-    <BlinkCard>
+    <BlinkCard className="mb-4">
       <Link href={post.url} className="voxx-postcard__link">
         <div className="voxx-postcard__header">
           <h2 className="voxx-postcard__title">{post.title}</h2>
           {config.features.readingTime ? (
-            <span>{`${post.readingTimeMinutes} min read`}</span>
+            <span className="hidden sm:flex">{`${post.readingTimeMinutes} min read`}</span>
           ) : null}
         </div>
 
-        {post.excerpt ? (
-          <p className="voxx-postcard__excerpt">{post.excerpt}</p>
+        {post.description ? (
+          <p className="voxx-postcard__excerpt">{post.description}</p>
         ) : null}
       </Link>
       <div className="voxx-postcard__footer">
@@ -45,6 +45,12 @@ export function PostCard({
           <time dateTime={post.date}>
             {formatDate(post.date, config.site.locale)}
           </time>
+          {config.features.readingTime ? (
+            <span className="sm:hidden">
+              {" "}
+              · {`${post.readingTimeMinutes} min read`}
+            </span>
+          ) : null}
         </p>
       </div>
     </BlinkCard>

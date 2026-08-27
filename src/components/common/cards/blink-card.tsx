@@ -9,7 +9,7 @@ export function BlinkCard({
   className?: string;
 }) {
   const styling = cn(
-    "group relative rounded-sm border border-border p-6 text-white cursor-pointer",
+    "group relative rounded-sm border border-border p-4 sm:p-6 text-white cursor-pointer",
     className,
   );
   return (
