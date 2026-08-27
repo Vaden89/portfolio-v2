@@ -1,6 +1,6 @@
 ---
 title: "Full-Text Search: A Practical Guide in PostgreSQL & Node.js"
-description: ""
+description: "Learn how to build fast, flexible full-text search with PostgreSQL, TypeORM, and Node.js through practical examples and queries."
 date: 2026-08-21
 slug: full-text-search-a-practical-guide-in-postgresql-node-js
 tags: []
