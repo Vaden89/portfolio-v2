@@ -1,5 +1,25 @@
 export const projects = [
   {
+    name: "Prism",
+    description:
+      "Prisim is a task and ticket management platform that helps teams turn requests into clear, actionable work using ai agents to gain understanding of a codebase.",
+    category: "Personal Project",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Convex",
+      "Hono.js",
+      "Redis",
+      "Python",
+      "RAG",
+      "ai-sdk",
+    ],
+    link: "https://prisim-ten.vercel.app/",
+    image: "/images/prism.png",
+    github: "https://github.com/Vaden89/prisim",
+    live_link: "https://prisim-ten.vercel.app/",
+  },
+  {
     name: "Reswork",
     description: `Reswork is a web application for creating, editing, and exporting professional
        resumes, it lets users choose from polished templates, fill out structured sections, preview changes live as they work, and export a finished, print-ready document.`,
