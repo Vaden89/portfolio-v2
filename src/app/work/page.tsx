@@ -106,7 +106,7 @@ const CareerBlock = ({
     >
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center bg-[#101113] border border-[#343a40/20] rounded-sm text-primary-gray text-sm font-semibold">
+          <div className="w-8 h-8 flex items-center justify-center dark:bg-[#101113] border border-[#343a40/20] rounded-sm text-primary-gray text-sm font-semibold">
             {image ? (
               <Image
                 src={image}

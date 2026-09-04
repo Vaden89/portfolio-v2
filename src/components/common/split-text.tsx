@@ -56,7 +56,7 @@ export function LettersPullUp({
             animate={isInView ? "animate" : "initial"}
             exit="exit"
             custom={i}
-            className={cn(`text-white sm:text-sm`, className)}
+            className={cn(`sm:text-sm`, className)}
           >
             {current === " " ? <span>&nbsp;</span> : current}
           </motion.div>

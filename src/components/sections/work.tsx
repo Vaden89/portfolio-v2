@@ -37,7 +37,7 @@ const WorkItem = ({
   return (
     <div className="w-full flex flex-col text-sm">
       <div className="flex items-center gap-2">
-        <div className="w-8 h-8 rounded-md bg-[#101113] border border-[#343a40/20] font-semibold flex items-center text-xs justify-center">
+        <div className="w-8 h-8 rounded-md bg-none dark:bg-[#101113] border border-[#343a40/20] font-semibold flex items-center text-xs justify-center">
           {image ? (
             <Image
               src={image}

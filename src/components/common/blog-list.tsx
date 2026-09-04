@@ -18,7 +18,7 @@ function BlogPostCard({ post }: { post: PostMeta }) {
   return (
     <BlinkCard className="p-4 group">
       <Link href={`/blog/${post.slug}`} className="flex flex-col gap-2">
-        <h2 className="font-semibold group-hover:text-primary transition-colors duration-200">
+        <h2 className="font-semibold group-hover:text-primary transition-colors duration-200 text-foreground">
           {post.title}
         </h2>
         <p className="text-xs text-primary-gray">

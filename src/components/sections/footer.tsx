@@ -28,16 +28,17 @@ export const Footer = () => {
           </Link>
           <Link
             href="/work"
-            className="flex px-2 py-1.5 lg:px-4 sm:py-2 bg-[#343a40] rounded text-sm font-medium shrink-0"
+            className="flex px-2 py-1.5 lg:px-4 sm:py-2 bg-[#f3f3f4] dark:bg-[#343a40] gap-1 rounded text-sm font-medium shrink-0"
           >
             <span>My Work</span>
             <ArrowUpRight size={16} />
           </Link>
         </div>
       </div>
-      <div className="w-full mt-7 flex text-xs sm:text-sm items-center justify-between font-montserrat text-[#adb5bd]">
+      <div className="w-full mt-7 flex text-xs sm:text-sm items-center justify-between font-montserrat dark:text-[#adb5bd]">
         <span>
-          Built by <span className="text-[#ced4da] font-medium">Isaac</span>
+          Built by{" "}
+          <span className="dark:text-[#ced4da] font-medium">Isaac</span>
         </span>
         <div className="flex items-center gap-2">
           <Copyright size={16} />

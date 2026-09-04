@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { socials } from "~/data/links";
 
@@ -36,7 +35,12 @@ const SocialPill = ({
 }) => {
   return (
     <div className="flex items-center gap-2 text-sm">
-      <Image src={icon} alt={platform} width={20} height={20} />
+      <span
+        aria-hidden
+        role="img"
+        style={{ maskImage: `url(${icon})`, WebkitMaskImage: `url(${icon})` }}
+        className="w-5 h-5 bg-foreground [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+      />
       <Link
         href={link}
         target="_blank"

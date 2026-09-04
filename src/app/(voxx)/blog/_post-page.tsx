@@ -10,8 +10,9 @@ export function PostPage({ post, config }: { post: Post; config: VoxxConfig }) {
     <div className="voxx voxx-layout">
       <article className="voxx-article">
         <Link
-          href={config.content.basePath || "/"}
+          data-transition-ignore
           className="voxx-article__back"
+          href={config.content.basePath || "/"}
         >
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path

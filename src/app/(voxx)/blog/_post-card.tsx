@@ -14,7 +14,11 @@ export function PostCard({
 
   return (
     <BlinkCard className="mb-4">
-      <Link href={post.url} className="voxx-postcard__link">
+      <Link
+        href={post.url}
+        data-transition-ignore
+        className="voxx-postcard__link"
+      >
         <div className="voxx-postcard__header">
           <h2 className="voxx-postcard__title">{post.title}</h2>
           {config.features.readingTime ? (

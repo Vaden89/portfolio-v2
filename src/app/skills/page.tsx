@@ -123,7 +123,13 @@ const ProgrammingLanguageBlock = ({
 }) => {
   return (
     <div className="flex items-center gap-2 border p-2">
-      <Image src={icon} width={18} height={18} alt="" />
+      <Image
+        src={icon}
+        width={18}
+        height={18}
+        alt=""
+        className="invert dark:invert-0"
+      />
       <span className="text-[13px] font-medium">{name}</span>
     </div>
   );

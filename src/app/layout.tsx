@@ -86,8 +86,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${bitcount.variable} antialiased min-h-screen w-full max-w-3xl mx-auto px-6 scrollbar`}
       >
-        <Navbar />
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

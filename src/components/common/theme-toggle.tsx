@@ -25,7 +25,7 @@ export function ThemeToggle() {
   }
   return (
     <button onClick={toggleTheme}>
-      {theme === "light" ? <Sun size={18} /> : <Moon size={18} />}
+      {theme === "light" ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 }

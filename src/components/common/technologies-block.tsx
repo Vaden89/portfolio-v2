@@ -8,7 +8,7 @@ export const TechnologiesBlock = ({
       {technologies.map((technology, index) => (
         <span
           key={index}
-          className="text-xs bg-zinc-900 border border-primary-dark-gray text-primary-gray rounded-lg px-1.5 p-1"
+          className="text-xs dark:bg-zinc-900 border border-primary-dark-gray dark:text-primary-gray rounded-lg px-1.5 p-1"
         >
           {technology}
         </span>
