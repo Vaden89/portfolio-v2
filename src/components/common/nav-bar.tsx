@@ -1,8 +1,10 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
+import { ThemeToggle } from "./theme-toggle";
 import { AnimatePresence, motion, Transition } from "motion/react";
+import { useTheme } from "next-themes";
 
 const routes = [
   { path: "/", name: "Home" },
@@ -13,12 +15,13 @@ const routes = [
 ];
 
 export const Navbar = () => {
+  const { theme } = useTheme();
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
     <motion.nav
       animate={{ height: "auto" }}
-      className="fixed top-4 right-6 left-6 z-50 box-border border border-primary-dark-gray px-4 bg-background flex flex-col overflow-hidden max-w-[45rem] mx-auto rounded-xl"
+      className="fixed top-4 right-6 left-6 z-45 box-border border border-primary-dark-gray px-4 bg-background flex flex-col overflow-hidden max-w-[45rem] mx-auto rounded-xl"
     >
       <div className="w-full flex items-center justify-between py-3">
         <Image
@@ -26,7 +29,14 @@ export const Navbar = () => {
           alt="Logo"
           width={28}
           height={28}
-          className="w-auto h-auto"
+          className="w-auto h-auto hidden dark:block"
+        />
+        <Image
+          src="/images/logo-dark.png"
+          alt="Logo"
+          width={28}
+          height={28}
+          className="w-auto h-auto block dark:hidden"
         />
 
         <DesktopMenu />
@@ -97,10 +107,11 @@ const MobileMenu = ({
   const transition: Transition = { duration: 0.3, ease: "easeInOut" };
 
   return (
-    <>
+    <div className="flex gap-4 sm:hidden items-center ">
+      <ThemeToggle />
       <button
         onClick={() => setIsOpen((p) => !p)}
-        className="relative w-4 h-3 sm:hidden"
+        className="relative w-4 h-3 mt-1"
       >
         <motion.div
           variants={topLineVariants}
@@ -121,7 +132,7 @@ const MobileMenu = ({
           className="w-4 h-0.5 bg-foreground absolute top-2 origin-bottom-left"
         />
       </button>
-    </>
+    </div>
   );
 };
 
@@ -136,6 +147,7 @@ const DesktopMenu = () => {
           <Link href={route.path}>{route.name}</Link>
         </li>
       ))}
+      <ThemeToggle />
     </ul>
   );
 };
